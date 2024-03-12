@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: textSummarizer
+Version: 0.0.0
+Summary: A python package for NLP application
+Home-page: https://github.com/JobCollins/Text-Summarizer
+Author: JobCollins
+Author-email: job.dulo@svrus.io
+Project-URL: Bug Tracker, https://github.com/JobCollins/Text-Summarizer/issues
+
+# Text-Summarizer
+End To End NLP Project Implementation With Deployment Github Action- Text Summarization
