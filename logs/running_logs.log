@@ -210,3 +210,89 @@ x==========x]
 [2024-03-12 20:38:11,632: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-03-12 20:47:30,096: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-03-12 20:54:20,618: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-03-12 21:26:12,681: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-03-12 21:26:13,491: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-12 21:26:13,496: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-12 21:26:13,497: INFO: common: created directory at: artifacts]
+[2024-03-12 21:26:13,498: INFO: common: created directory at: artifacts/model_trainer]
+[2024-03-12 21:27:06,585: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-03-12 21:27:07,860: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-12 21:27:07,862: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-12 21:27:07,863: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-12 21:27:07,863: INFO: common: created directory at: artifacts]
+[2024-03-12 21:27:07,863: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-12 21:37:45,098: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 1302:3BBFF6:2B0E58:445CCC:65F09E7E
+Accept-Ranges: bytes
+Date: Tue, 12 Mar 2024 18:27:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-jnb7022-JNB
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1710268031.885953,VS0,VE1507
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 94e0e6f52efc1b66ea1db520ddd70468124e313d
+Expires: Tue, 12 Mar 2024 18:32:12 GMT
+Source-Age: 1
+
+]
+[2024-03-12 21:37:45,216: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-12 21:37:45,216: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-03-12 21:37:45,219: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-12 21:37:45,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-12 21:37:45,220: INFO: common: created directory at: artifacts]
+[2024-03-12 21:37:45,220: INFO: common: created directory at: artifacts/data_validation]
+[2024-03-12 21:37:45,221: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-03-12 21:37:45,221: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-03-12 21:37:45,222: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-12 21:37:45,223: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-12 21:37:45,223: INFO: common: created directory at: artifacts]
+[2024-03-12 21:37:45,223: INFO: common: created directory at: artifacts/data_transformation]
+[2024-03-12 21:37:48,901: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-03-12 21:37:48,901: INFO: main: *******************]
+[2024-03-12 21:37:48,901: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-03-12 21:37:48,903: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2024-03-12 21:37:48,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-12 21:37:48,904: INFO: common: created directory at: artifacts]
+[2024-03-12 21:37:48,904: INFO: common: created directory at: artifacts/model_trainer]
+[2024-03-12 22:03:02,109: ERROR: main: 'NoneType' object has no attribute 'split']
+Traceback (most recent call last):
+  File "main.py", line 43, in <module>
+    model_trainer.main()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/components/model_trainer.py", line 47, in train
+    trainer.train()
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1624, in train
+    return inner_training_loop(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1879, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer_callback.py", line 370, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer_callback.py", line 414, in call_event
+    result = getattr(callback, event)(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/integrations/integration_utils.py", line 1035, in on_train_begin
+    self.setup(args, state, model)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/integrations/integration_utils.py", line 1106, in setup
+    owner=self.remote.split(os.sep)[-2],
+AttributeError: 'NoneType' object has no attribute 'split'
