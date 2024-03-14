@@ -7,6 +7,11 @@ import torch
 
 from textSummarizer.entity import ModelTrainerConfig
 
+
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/JobCollins/Text-Summarizer.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="JobCollins"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="f8c8b4cd530ac2ba900d1a757fae8cf2ad1aaf67"
+
 class ModelTrainer:
     def __init__(self, config: ModelTrainerConfig):
         self.config = config

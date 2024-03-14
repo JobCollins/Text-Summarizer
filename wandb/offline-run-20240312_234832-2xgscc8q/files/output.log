@@ -1,0 +1,66 @@
+{'loss': 3.1995, 'grad_norm': 20.461362838745117, 'learning_rate': 1.0000000000000002e-06, 'epoch': 0.01}
+[2024-03-13 00:31:52,008: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 3.2262, 'grad_norm': 9.72009563446045, 'learning_rate': 2.0000000000000003e-06, 'epoch': 0.02}
+[2024-03-13 01:15:31,643: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.9226, 'grad_norm': 11.415589332580566, 'learning_rate': 3e-06, 'epoch': 0.03}
+[2024-03-13 01:58:18,854: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.8534, 'grad_norm': 14.377910614013672, 'learning_rate': 4.000000000000001e-06, 'epoch': 0.04}
+[2024-03-13 02:40:39,118: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.6914, 'grad_norm': 12.444257736206055, 'learning_rate': 5e-06, 'epoch': 0.05}
+[2024-03-13 03:24:44,771: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.7276, 'grad_norm': 24.58033561706543, 'learning_rate': 6e-06, 'epoch': 0.07}
+[2024-03-13 04:12:45,284: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.6261, 'grad_norm': 10.336150169372559, 'learning_rate': 7.000000000000001e-06, 'epoch': 0.08}
+[2024-03-13 04:54:48,118: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.4246, 'grad_norm': 10.583943367004395, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.09}
+[2024-03-13 05:42:53,181: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.4909, 'grad_norm': 7.286097049713135, 'learning_rate': 9e-06, 'epoch': 0.1}
+[2024-03-13 06:31:12,874: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+{'loss': 2.4605, 'grad_norm': 7.593699932098389, 'learning_rate': 1e-05, 'epoch': 0.11}
+[2024-03-13 07:13:40,100: WARNING: connectionpool: Retrying (JitteredRetry(total=4, connect=5, read=4, redirect=5, status=5)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='dagshub.com', port=443): Read timed out. (read timeout=120)")': /JobCollins/Text-Summarizer.mlflow/api/2.0/mlflow/runs/log-batch]
+ 11%|█████████████████▏                                                                                                                                            | 100/920 [7:24:43<59:02:42, 259.22s/it]Traceback (most recent call last):
+  File "main.py", line 43, in <module>
+    model_trainer.main()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/components/model_trainer.py", line 52, in train
+    trainer.train()
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1624, in train
+    return inner_training_loop(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1961, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 2902, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 2925, in compute_loss
+    outputs = model(**inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1358, in forward
+    outputs = self.model(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1202, in forward
+    encoder_outputs = self.encoder(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 791, in forward
+    layer_outputs = encoder_layer(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 324, in forward
+    hidden_states = self.activation_fn(self.fc1(hidden_states))
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

@@ -1,0 +1,248 @@
+
+
+
+
+
+
+
+
+
+
+  1%|█▌                                                                                                                                                                | 9/920 [35:30<59:44:48, 236.10s/it]
+
+  1%|█▊                                                                                                                                                               | 10/920 [39:15<58:48:37, 232.66s/it]
+
+
+
+
+
+
+
+
+
+  2%|███▎                                                                                                                                                           | 19/920 [1:16:35<62:27:15, 249.54s/it]
+
+  2%|███▍                                                                                                                                                           | 20/920 [1:21:19<65:01:20, 260.09s/it]
+
+
+
+
+
+
+
+
+
+
+  3%|█████▏                                                                                                                                                         | 30/920 [2:01:51<59:44:04, 241.62s/it]
+{'loss': 2.9226, 'grad_norm': 11.415589332580566, 'learning_rate': 3e-06, 'epoch': 0.03}
+
+
+
+
+
+
+
+
+
+
+  4%|██████▉                                                                                                                                                        | 40/920 [2:41:34<55:56:48, 228.87s/it]
+{'loss': 2.8534, 'grad_norm': 14.377910614013672, 'learning_rate': 4.000000000000001e-06, 'epoch': 0.04}
+
+
+
+
+
+
+
+
+
+  5%|████████▍                                                                                                                                                      | 49/920 [3:18:59<57:36:05, 238.08s/it]
+
+  5%|████████▋                                                                                                                                                      | 50/920 [3:22:15<54:29:36, 225.49s/it]
+
+
+
+
+
+
+
+
+
+  6%|██████████▏                                                                                                                                                    | 59/920 [4:00:01<59:41:01, 249.55s/it]
+
+  7%|██████████▎                                                                                                                                                    | 60/920 [4:04:38<61:34:41, 257.77s/it]
+
+
+
+
+
+
+
+
+
+
+  8%|████████████                                                                                                                                                   | 70/920 [4:49:30<67:00:17, 283.79s/it]
+{'loss': 2.6261, 'grad_norm': 10.336150169372559, 'learning_rate': 7.000000000000001e-06, 'epoch': 0.08}
+
+
+
+
+
+
+
+
+
+
+  9%|█████████████▊                                                                                                                                                 | 80/920 [5:42:02<71:51:19, 307.95s/it]
+{'loss': 2.4246, 'grad_norm': 10.583943367004395, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.09}
+
+
+
+
+
+
+
+
+
+
+ 10%|███████████████▌                                                                                                                                               | 90/920 [6:26:28<58:32:32, 253.92s/it]
+{'loss': 2.4909, 'grad_norm': 7.286097049713135, 'learning_rate': 9e-06, 'epoch': 0.1}
+
+
+
+
+
+
+
+
+
+
+ 11%|█████████████████▏                                                                                                                                            | 100/920 [7:05:20<53:22:44, 234.35s/it]
+{'loss': 2.4605, 'grad_norm': 7.593699932098389, 'learning_rate': 1e-05, 'epoch': 0.11}
+
+
+
+
+
+
+
+
+
+
+ 12%|██████████████████▉                                                                                                                                           | 110/920 [7:47:23<54:40:58, 243.04s/it]
+{'loss': 2.2177, 'grad_norm': 15.980989456176758, 'learning_rate': 1.1000000000000001e-05, 'epoch': 0.12}
+
+
+
+
+
+
+
+
+
+
+ 13%|████████████████████▌                                                                                                                                         | 120/920 [9:10:05<67:41:14, 304.59s/it]
+{'loss': 2.1736, 'grad_norm': 6.220731258392334, 'learning_rate': 1.2e-05, 'epoch': 0.13}
+
+
+
+
+
+
+
+
+
+ 14%|██████████████████████▏                                                                                                                                       | 129/920 [9:47:44<55:59:53, 254.86s/it]
+
+ 14%|██████████████████████▎                                                                                                                                       | 130/920 [9:52:20<57:18:17, 261.14s/it]
+
+
+
+
+
+
+
+
+
+
+ 15%|███████████████████████▉                                                                                                                                     | 140/920 [10:34:38<56:02:03, 258.62s/it]
+{'loss': 2.1057, 'grad_norm': 10.132697105407715, 'learning_rate': 1.4000000000000001e-05, 'epoch': 0.15}
+
+
+
+
+
+
+
+
+
+
+ 16%|█████████████████████████▌                                                                                                                                   | 150/920 [11:14:59<50:33:00, 236.34s/it]
+{'loss': 2.0118, 'grad_norm': 7.577073574066162, 'learning_rate': 1.5e-05, 'epoch': 0.16}
+
+
+
+
+
+
+
+
+
+
+ 17%|███████████████████████████▎                                                                                                                                 | 160/920 [11:55:43<53:36:55, 253.97s/it]
+{'loss': 1.9887, 'grad_norm': 8.908809661865234, 'learning_rate': 1.6000000000000003e-05, 'epoch': 0.17}
+
+
+
+ 18%|███████████████████████████▊                                                                                                                                 | 163/920 [12:07:32<50:43:20, 241.22s/it]Traceback (most recent call last):
+  File "main.py", line 43, in <module>
+    model_trainer.main()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/pipeline/stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "/Users/jobdulo/Documents/Text-Summarizer/src/textSummarizer/components/model_trainer.py", line 52, in train
+    trainer.train()
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1624, in train
+    return inner_training_loop(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 1961, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 2902, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/trainer.py", line 2925, in compute_loss
+    outputs = model(**inputs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1358, in forward
+    outputs = self.model(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1220, in forward
+    decoder_outputs = self.decoder(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 1052, in forward
+    layer_outputs = decoder_layer(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 412, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/transformers/models/pegasus/modeling_pegasus.py", line 192, in forward
+    key_states = self._shape(self.k_proj(hidden_states), -1, bsz)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1529, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/jobdulo/opt/anaconda3/envs/mlops/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
